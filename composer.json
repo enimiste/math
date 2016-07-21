@@ -1,0 +1,36 @@
+{
+  "name": "enimiste/math",
+  "description": "Math calculation, number representation package",
+  "keywords": [
+    "math",
+    "laravel",
+    "financial",
+    "float",
+    "number",
+    "tva",
+    "price"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "El bachir NOUNI",
+      "email": "nouni.elbachir@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.6",
+    "ext-bcmath": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Enimiste\\Math\\": "src",
+      "Test\\Enimiste\\Math\\": "tests"
+    }
+  },
+  "require-dev": {
+    "fzaninotto/faker": "~1.4",
+    "mockery/mockery": "0.9.*",
+    "phpunit/phpunit": "~4.0"
+  }
+}
