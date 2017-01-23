@@ -13,20 +13,28 @@ NB: conversion from float to integer is used with round :
 - `1.6` ==> `2`
 
 ####Examples
-`$ints[] = new Enimiste\Math\VO\IntegerNumber(1);`
+```php
+$ints[] = new Enimiste\Math\VO\IntegerNumber(1);
 
-`$ints[] = new Enimiste\Math\VO\IntegerNumber(1.0);`
+$ints[] = new Enimiste\Math\VO\IntegerNumber(1.0);
 
-`$ints[] = new Enimiste\Math\VO\IntegerNumber('1');`
+$ints[] = new Enimiste\Math\VO\IntegerNumber('1');
 
-`$ints[] = new Enimiste\Math\VO\IntegerNumber(1.39);`
+$ints[] = new Enimiste\Math\VO\IntegerNumber(1.39);
 
-`$ints[] = new Enimiste\Math\VO\IntegerNumber(1.7);`
+$ints[] = new Enimiste\Math\VO\IntegerNumber(1.7);
 
-`$ints[] = new Enimiste\Math\VO\IntegerNumber(-3);`
+$ints[] = new Enimiste\Math\VO\IntegerNumber(-3);
+```
 
 The code below :
-`foreach($ints as $x) { echo $x->getValue(); echo $x->getOrigin(); echo $x->__toString(); }`
+```php
+foreach($ints as $x) { 
+    echo $x->getValue(); 
+    echo $x->getOrigin(); 
+    echo $x->__toString(); 
+}
+```
 
 will output the results :
 - `1` | `1` | `"1"`
